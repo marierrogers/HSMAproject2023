@@ -38,4 +38,31 @@ web_page_for_data <- paste0(file_source_url, stats_df %>% arrange(desc(thedate))
 
 fetch_zip_urls <- read_html(web_page_for_data) %>% html_elements('a') %>% html_attr('href')
 
+# Remove contents from tempdir
+unlink('tempdir/*.csv')
+unlink('tempdir/*.zip')
+
 zip_url <- fetch_zip_urls[grepl('.zip',fetch_zip_urls) & grepl('turnover', tolower(fetch_zip_urls))]
+
+# Download zip file
+download.file(
+  zip_url,
+  "tempdir/turnover.zip",
+  mode = "wb"
+)
+
+# Unzip files to tempdir
+unzip('tempdir/turnover.zip', exdir = 'tempdir')
+
+
+# Retrieve list of inactive organisations, which will be removed from the time series data ------
+
+js <- read_json('https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?Status=Inactive&Roles=RO197,RO98&Limit=1000', simplifyVector = T)
+
+js_df <- tibble(
+  name = js$Organisations$Name,
+  org_id = js$Organisations$OrgId
+)
+
+saveRDS(js_df, 'tempdir/inactive_organisations.rds')
+
