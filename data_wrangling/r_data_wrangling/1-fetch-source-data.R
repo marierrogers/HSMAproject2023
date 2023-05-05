@@ -1,7 +1,14 @@
-# Fetch source data
-
 library(tidyverse)
 library(rvest)
+
+# Check tempdir exists
+
+if(!dir.exists('tempdir')) {
+  dir.create('tempdir')
+}
+
+
+# Fetch source data
 
 options(t)
 

@@ -2,4 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store
 data_wrangling/r_data_wrangling/tempdir/*
