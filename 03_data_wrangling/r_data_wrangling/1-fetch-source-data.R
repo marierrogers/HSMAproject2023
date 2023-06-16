@@ -1,5 +1,6 @@
 library(tidyverse)
 library(rvest)
+library(jsonlite)
 
 # Check tempdir exists
 
@@ -10,12 +11,10 @@ if(!dir.exists('tempdir')) {
 
 # Fetch source data
 
-options(t)
-
 check_url <- 'https://digital.nhs.uk/data-and-information/publications/statistical/nhs-workforce-statistics'
 file_source_url <- 'https://digital.nhs.uk'
 
-source_site <- read_html(source_url) %>% html_elements('#past-publications')
+source_site <- read_html(check_url) %>% html_elements('#past-publications')
 
 a <- source_site %>% html_elements("a") %>% html_attr('href')
 
@@ -27,6 +26,7 @@ retrieve_stats_URLs <- function(url_string, base_url_string = "publications/stat
     x <- str_split(url_string, '/')
     date_string <- tail(x[[1]], 1)
     date_string_as_date <- lubridate::my(date_string)
+    #print(date_string_as_date)
     if(!is.na(date_string_as_date)) {
       #print(date_string_as_date)
       return(list(orig_url = url_string, thedate = date_string_as_date))
