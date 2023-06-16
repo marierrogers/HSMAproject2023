@@ -1,0 +1,12 @@
+numpy
+pandas
+pdoc
+pytest
+scikit-learn
+joblib
+plotly
+scipy
+seaborn
+tenacity
+ipywidgets
+notebook
