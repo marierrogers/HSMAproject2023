@@ -14,17 +14,17 @@ process_turnover_df <- function(df) {
   df1 <- df %>%
     mutate(
       date_string = case_when(
-        (Type %in% c('Leavers', 'Joiners')) ~ paste0(str_extract(Period, "[^ to ]+$"),'01'),
+        (Type %in% c('Leavers', 'Joiners')) ~ paste0(str_extract(Period, "^(\\d+)"),'01'),
         Type == 'Denoms' ~ paste0('01/',str_sub(Period, 4, 10)),
         TRUE ~ NA_character_
       ),
-      thedate = as.Date(lubridate::now())
+      thedate = lubridate::ymd("1970-01-01")
     )
   
   # Convert strings to dates, depending on which Type it is
   # Bit of a fudge, but I can't get it to work in the mutate statement
   df1$thedate[df1$Type == 'Denoms'] = parse_date(df1$date_string[df1$Type == 'Denoms'], format = '%d/%m/%Y')
-  df1$thedate[df1$Type != 'Denoms'] = parse_date(df1$date_string[df1$Type != 'Denoms'], format = '%Y%m%d')
+  df1$thedate[df1$Type %in% c("Leavers", "Joiners")] = parse_date(df1$date_string[df1$Type %in% c("Leavers", "Joiners")], format = '%Y%m%d')
   
   #print(df1 %>% count(`Org code`, `Staff group`, thedate))
   
@@ -51,7 +51,10 @@ process_turnover_df <- function(df) {
 
 # Annual data
 processed_annual_df <- process_turnover_df(annual_df) 
-processed_annual_df %>% count() # 251814
+processed_annual_df %>% count() # 242887
+
+#processed_annual_df %>% filter(org_code == '00Q', month_year == lubridate::ymd('2021-05-01')) %>% arrange(desc(month_year)) %>% head(n=20)
+annual_df %>% filter(`Org code` == '00Q', grepl("2022",Period)) %>% view()
 
 processed_annual_df1 <- processed_annual_df %>% anti_join(js_df, by=c("org_code" = "org_id"))
 processed_annual_df1 %>% count() # 214839
