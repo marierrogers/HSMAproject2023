@@ -49,7 +49,7 @@ fetch_zip_urls <- read_html(web_page_for_data) %>% html_elements('a') %>% html_a
 unlink('tempdir/*.csv')
 unlink('tempdir/*.zip')
 
-zip_url <- fetch_zip_urls[grepl('.zip',fetch_zip_urls) & grepl('turnover', tolower(fetch_zip_urls))]
+zip_url <- fetch_zip_urls[which(grepl('.zip',fetch_zip_urls) & grepl('turnover', tolower(fetch_zip_urls)))]
 
 # Download zip file
 download.file(
