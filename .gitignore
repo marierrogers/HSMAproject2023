@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 .DS_Store
-data_wrangling/r_data_wrangling/tempdir/*
-data_wrangling/python_data_wrangling/tempdir/*
+03_data_wrangling/r_data_wrangling/tempdir/*
+03_data_wrangling/python_data_wrangling/tempdir/*
