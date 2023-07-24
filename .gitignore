@@ -12,3 +12,7 @@
 .venv
 .zip
 archive/*
+.code-workspace
+01_data/*.xlsx
+02_scripts/*.csv
+02_scripts/*.xlsx
