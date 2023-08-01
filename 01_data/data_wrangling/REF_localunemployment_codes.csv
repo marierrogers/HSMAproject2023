@@ -1,0 +1,19 @@
+﻿Region,NHSE region name,Suffix,Type
+East Midlands,Midlands,ycnf/lms,%
+East of England,East of England,ycnh/lms,%
+London,London,ycni/lms,%
+North East,North East,ycnc/lms,%
+North West,North West,ycnd/lms,%
+South East,South East,ycnj/lms,%
+South West,South West,ycnk/lms,%
+West Midlands,Midlands,ycng/lms,%
+York & the Humber,North East and Yorkshire,ycne/lms,%
+East Midlands,Midlands,ycms/lms,thousands
+East of England,East of England,ycmu/lms,thousands
+London,London,ycmv/lms,thousands
+North East,North East,ycmp/lms,thousands
+North West,North West,ycmq/lms,thousands
+South East,South East,ycmw/lms,thousands
+South West,South West,ycmx/lms,thousands
+West Midlands,Midlands,ycmt/lms,thousands
+York & the Humber,North East and Yorkshire,ycmr/lms,thousands
