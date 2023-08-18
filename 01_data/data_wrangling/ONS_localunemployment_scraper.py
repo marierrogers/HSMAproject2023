@@ -20,7 +20,7 @@ def download_data(url):
     return df
 
 # Get info from ref table to decode URLs - ensure saved in working folder
-url_codes = pd.read_csv('localunemployment_codes.csv')
+url_codes = pd.read_csv('REF_localunemployment_codes.csv')
 
 suffixes = url_codes['Suffix']
 
