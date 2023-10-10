@@ -17,3 +17,4 @@ archive/*
 01_data/*.csv
 02_scripts/*.csv
 02_scripts/*.xlsx
+git_ignore/*
