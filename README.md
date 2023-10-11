@@ -9,3 +9,5 @@ This project is a work in progress.
 3. Multiple regression analysis
 4. Dashboard
 
+![Sample dashboard image](./03_dashboard/assets/sample-dashboard.png)
+
