@@ -1,0 +1,7 @@
+.nav-link.active {
+    border-bottom: 5px solid #005EB8 !important;
+}
+
+h1 {
+    font-size: 4em !important;
+}
