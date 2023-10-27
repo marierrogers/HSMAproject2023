@@ -15,6 +15,8 @@ archive/*
 .code-workspace
 01_data/*.xlsx
 01_data/*.csv
+01_data/archive/*
 02_scripts/*.csv
 02_scripts/*.xlsx
 git_ignore/*
+venv
