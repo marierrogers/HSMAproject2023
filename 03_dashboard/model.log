@@ -1392,3 +1392,529 @@
 242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
 243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
 244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 13:44:00,194 Off we go!
+2023-11-13 13:44:00,196 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 13:44:00,789 Off we go!
+2023-11-13 13:44:06,981 Callback triggered with staff group (All)
+2023-11-13 13:44:06,981     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 13:44:06,983 Callback triggered with staff group (All)
+2023-11-13 13:44:06,987     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 13:44:14,994 Callback triggered with staff group (All)
+2023-11-13 13:44:14,995     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:02:27,397 Off we go!
+2023-11-13 14:02:27,398 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 14:02:28,521 Off we go!
+2023-11-13 14:02:29,894 Callback triggered with staff group s
+2023-11-13 14:02:29,895     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:02:29,908 Callback triggered with staff group s
+2023-11-13 14:02:29,909     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:02:54,621 Off we go!
+2023-11-13 14:02:54,736 Callback triggered with staff group s
+2023-11-13 14:02:54,736     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:02:54,747 Callback triggered with staff group s
+2023-11-13 14:02:54,747     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:03:19,835 Off we go!
+2023-11-13 14:03:21,034 Callback triggered with staff group s
+2023-11-13 14:03:21,035     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:03:21,043 Callback triggered with staff group s
+2023-11-13 14:03:21,044     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:06:58,384 Off we go!
+2023-11-13 14:06:58,385 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 14:06:59,509 Off we go!
+2023-11-13 14:07:00,527 Callback triggered with staff group 
+2023-11-13 14:07:00,527     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:07:05,751 Callback triggered with staff group All staff groups
+2023-11-13 14:07:05,752     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:07:35,083 Off we go!
+2023-11-13 14:07:35,743 Callback triggered with staff group All staff groups
+2023-11-13 14:07:35,743     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:08:49,493 Off we go!
+2023-11-13 14:08:50,737 Callback triggered with staff group All staff groups
+2023-11-13 14:08:50,737     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:08:52,263 Callback triggered with staff group All staff groups
+2023-11-13 14:08:52,263     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:10:15,960 Off we go!
+2023-11-13 14:10:16,291 Callback triggered with staff group All staff groups
+2023-11-13 14:10:16,291     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:10:24,542 Callback triggered with staff group 
+2023-11-13 14:10:24,543     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:10:28,713 Callback triggered with staff group All staff groups
+2023-11-13 14:10:28,713     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:10:50,475 Off we go!
+2023-11-13 14:10:50,604 Callback triggered with staff group All staff groups
+2023-11-13 14:10:50,604     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:11:12,344 Off we go!
+2023-11-13 14:11:13,682 Callback triggered with staff group All staff groups
+2023-11-13 14:11:13,683     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:11:23,839 Off we go!
+2023-11-13 14:11:25,671 Callback triggered with staff group All staff groups
+2023-11-13 14:11:25,671     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:12:02,402 Off we go!
+2023-11-13 14:12:02,523 Callback triggered with staff group All staff groups
+2023-11-13 14:12:02,524     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:12:36,950 Off we go!
+2023-11-13 14:12:37,880 Callback triggered with staff group All staff groups
+2023-11-13 14:12:37,881     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:12:49,569 Off we go!
+2023-11-13 14:12:49,820 Callback triggered with staff group All staff groups
+2023-11-13 14:12:49,821     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:13:17,792 Off we go!
+2023-11-13 14:13:17,902 Callback triggered with staff group All staff groups
+2023-11-13 14:13:17,902     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:13:30,458 Off we go!
+2023-11-13 14:13:31,828 Callback triggered with staff group All staff groups
+2023-11-13 14:13:31,828     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:19:30,081 Off we go!
+2023-11-13 14:19:30,082 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 14:19:31,163 Off we go!
+2023-11-13 14:19:31,820 Callback triggered with staff group All staff groups
+2023-11-13 14:19:31,820     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:19:52,914 Off we go!
+2023-11-13 14:19:53,041 Callback triggered with staff group All staff groups
+2023-11-13 14:19:53,042     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:20:28,384 Off we go!
+2023-11-13 14:20:28,828 Callback triggered with staff group All staff groups
+2023-11-13 14:20:28,829     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:20:57,419 Off we go!
+2023-11-13 14:20:58,830 Callback triggered with staff group All staff groups
+2023-11-13 14:20:58,831     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:21:02,773 Off we go!
+2023-11-13 14:21:02,859 Callback triggered with staff group All staff groups
+2023-11-13 14:21:02,859     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:21:12,273 Off we go!
+2023-11-13 14:21:13,789 Callback triggered with staff group All staff groups
+2023-11-13 14:21:13,789     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 14:21:33,024 Off we go!
+2023-11-13 14:21:34,803 Callback triggered with staff group All staff groups
+2023-11-13 14:21:34,803     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:28:53,541 Off we go!
+2023-11-13 15:28:53,542 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 15:28:54,625 Off we go!
+2023-11-13 15:28:55,780 Callback triggered with staff group All staff groups
+2023-11-13 15:28:55,780     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:29:27,188 Off we go!
+2023-11-13 15:29:27,189 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 15:29:28,270 Off we go!
+2023-11-13 15:29:28,769 Callback triggered with staff group All staff groups
+2023-11-13 15:29:28,770     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:32:28,844 Off we go!
+2023-11-13 15:32:29,000 Callback triggered with staff group All staff groups
+2023-11-13 15:32:29,001     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:35:50,150 Off we go!
+2023-11-13 15:35:50,151 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 15:35:51,287 Off we go!
+2023-11-13 15:35:52,818 Callback triggered with staff group East of England
+2023-11-13 15:35:52,818     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:37:39,489 Off we go!
+2023-11-13 15:37:39,490 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 15:37:40,585 Off we go!
+2023-11-13 15:37:40,832 Callback triggered with staff group All regions
+2023-11-13 15:37:40,832     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:38:13,698 Off we go!
+2023-11-13 15:38:13,827 Callback triggered with staff group All regions
+2023-11-13 15:38:13,827     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:39:15,565 Off we go!
+2023-11-13 15:39:16,823 Callback triggered with staff group All regions
+2023-11-13 15:39:16,823     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:39:29,365 Callback triggered with staff group All regions
+2023-11-13 15:39:29,365     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:39:32,168 Callback triggered with staff group All regions
+2023-11-13 15:39:32,168     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:44:29,526 Off we go!
+2023-11-13 15:44:34,870 Off we go!
+2023-11-13 15:44:50,716 Off we go!
+2023-11-13 15:45:00,165 Off we go!
+2023-11-13 15:45:00,813 Callback triggered with staff group All regions
+2023-11-13 15:45:00,813     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:45:02,816 Callback triggered with staff group All regions
+2023-11-13 15:45:02,816     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:46:32,073 Off we go!
+2023-11-13 15:46:32,074 Dash is running on http://127.0.0.1:8050/
+
+2023-11-13 15:46:33,173 Off we go!
+2023-11-13 15:47:10,996 Off we go!
+2023-11-13 15:48:20,150 Callback triggered with staff group 
+2023-11-13 15:48:20,150     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-13 15:49:50,846 Off we go!
+2023-11-13 15:50:30,501 Off we go!
+2023-11-13 15:54:47,783 Off we go!
+2023-11-13 15:55:56,170 Off we go!
+2023-11-13 15:55:57,665 Staff group is: All regions
+2023-11-13 15:56:03,637 Staff group is: All regions
+2023-11-13 15:56:14,533 Staff group is: All regions
+2023-11-13 15:56:43,937 Off we go!
+2023-11-13 15:56:45,649 Staff group is: All regions
+2023-11-13 15:57:04,434 Staff group is: All regions
+2023-11-13 15:58:07,579 Off we go!
+2023-11-13 15:58:07,676 Staff group is: All staff groups
+2023-11-13 15:58:13,982 Staff group is: Ambulance staff
+2023-11-13 15:58:16,702 Staff group is: All staff groups
+2023-11-13 15:59:08,719 Off we go!
+2023-11-13 15:59:09,647 Staff group is: All staff groups
+2023-11-13 15:59:34,584 Off we go!
+2023-11-13 15:59:34,659 Staff group is: All staff groups
+2023-11-13 15:59:39,899 Off we go!
+2023-11-13 15:59:39,986 Staff group is: All staff groups
+2023-11-13 15:59:44,430 Staff group is: ['All staff groups', 'Central functions']
+2023-11-13 16:05:22,928 Off we go!
+2023-11-13 16:05:25,568 Staff group is: All staff groups
+2023-11-13 16:05:28,039 Staff group is: []
+2023-11-13 16:05:30,771 Staff group is: ['Central functions']
+2023-11-13 16:05:59,201 Off we go!
+2023-11-13 16:06:00,640 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:06:05,633 fig_call_vol function triggered with: ['All staff groups', 'HCHS doctors (exc. junior Drs)']
+2023-11-13 16:06:24,352 Off we go!
+2023-11-13 16:06:24,633 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:06:29,759 fig_call_vol function triggered with: ['All staff groups', 'HCHS doctors (exc. junior Drs)']
+2023-11-13 16:06:52,539 Off we go!
+2023-11-13 16:06:52,621 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:06:55,860 fig_call_vol function triggered with: ['All staff groups', 'Hotel, property & estates']
+2023-11-13 16:07:11,451 Off we go!
+2023-11-13 16:07:12,630 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:07:26,083 Off we go!
+2023-11-13 16:07:27,611 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:07:27,611 fig_call_vol function triggered with: ['All staff groups']
+2023-11-13 16:07:40,727 Off we go!
+2023-11-13 16:07:40,813 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:07:40,813 sickness_staff_group function triggered with: ['All staff groups']
+2023-11-13 16:07:46,077 Off we go!
+2023-11-13 16:07:46,147 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:07:46,147 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:08:24,248 Off we go!
+2023-11-13 16:08:24,626 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:08:24,626 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:08:24,626 all staff
+2023-11-13 16:08:41,922 Off we go!
+2023-11-13 16:08:42,627 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:08:42,627 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:08:42,627 all staff
+2023-11-13 16:08:58,693 Off we go!
+2023-11-13 16:08:58,795 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:08:58,795 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:08:58,795 all staff
+2023-11-13 16:08:58,813 HELLO
+2023-11-13 16:12:22,834 Off we go!
+2023-11-13 16:12:22,929 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:12:22,929 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:12:22,929 all staff
+2023-11-13 16:12:22,950 HELLO
+2023-11-13 16:19:22,742 Off we go!
+2023-11-13 16:20:19,823 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:20:19,824 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:20:19,824 all staff
+2023-11-13 16:20:19,843 HELLO
+2023-11-13 16:22:16,937 Off we go!
+2023-11-13 16:22:17,705 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:22:17,705 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:22:17,705 all staff
+2023-11-13 16:22:17,730 HELLO
+2023-11-13 16:22:34,908 Off we go!
+2023-11-13 16:22:36,642 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:22:36,642 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:22:36,643 all staff
+2023-11-13 16:22:36,661 HELLO
+2023-11-13 16:22:40,028 fig_call_vol function triggered with: []
+2023-11-13 16:22:40,028 sickness_staff_group values is: []
+2023-11-13 16:22:40,028 some staff
+2023-11-13 16:22:40,035 HELLO
+2023-11-13 16:22:42,144 fig_call_vol function triggered with: ['Ambulance staff']
+2023-11-13 16:22:42,145 sickness_staff_group values is: ['Ambulance staff']
+2023-11-13 16:22:42,145 some staff
+2023-11-13 16:22:42,159 HELLO
+2023-11-13 16:22:44,251 fig_call_vol function triggered with: ['Ambulance staff', 'Central functions']
+2023-11-13 16:22:44,251 sickness_staff_group values is: ['Ambulance staff', 'Central functions']
+2023-11-13 16:22:44,251 some staff
+2023-11-13 16:22:44,271 HELLO
+2023-11-13 16:22:46,772 fig_call_vol function triggered with: ['Ambulance staff', 'Central functions', 'Senior managers']
+2023-11-13 16:22:46,773 sickness_staff_group values is: ['Ambulance staff', 'Central functions', 'Senior managers']
+2023-11-13 16:22:46,773 some staff
+2023-11-13 16:22:46,805 HELLO
+2023-11-13 16:23:03,314 fig_call_vol function triggered with: ['Ambulance staff', 'Central functions', 'Senior managers', 'Nurses & health visitors']
+2023-11-13 16:23:03,315 sickness_staff_group values is: ['Ambulance staff', 'Central functions', 'Senior managers', 'Nurses & health visitors']
+2023-11-13 16:23:03,315 some staff
+2023-11-13 16:23:03,343 HELLO
+2023-11-13 16:23:12,658 fig_call_vol function triggered with: ['Ambulance staff', 'Central functions', 'Senior managers', 'Nurses & health visitors', 'Support to ambulance staff']
+2023-11-13 16:23:12,658 sickness_staff_group values is: ['Ambulance staff', 'Central functions', 'Senior managers', 'Nurses & health visitors', 'Support to ambulance staff']
+2023-11-13 16:23:12,659 some staff
+2023-11-13 16:23:12,692 HELLO
+2023-11-13 16:23:19,267 fig_call_vol function triggered with: ['Ambulance staff', 'Central functions', 'Senior managers', 'Nurses & health visitors', 'Support to ambulance staff', 'Midwives']
+2023-11-13 16:23:19,267 sickness_staff_group values is: ['Ambulance staff', 'Central functions', 'Senior managers', 'Nurses & health visitors', 'Support to ambulance staff', 'Midwives']
+2023-11-13 16:23:19,267 some staff
+2023-11-13 16:23:19,309 HELLO
+2023-11-13 16:23:26,199 fig_call_vol function triggered with: []
+2023-11-13 16:23:26,200 sickness_staff_group values is: []
+2023-11-13 16:23:26,200 some staff
+2023-11-13 16:23:26,207 HELLO
+2023-11-13 16:23:28,746 fig_call_vol function triggered with: ['All staff groups']
+2023-11-13 16:23:28,747 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:23:28,747 all staff
+2023-11-13 16:23:28,772 HELLO
+2023-11-13 16:26:20,659 Off we go!
+2023-11-13 16:26:20,750 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:26:20,750 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:26:20,750 all staff
+2023-11-13 16:27:23,712 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:27:23,713 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:27:23,713 all staff
+2023-11-13 16:27:27,783 Off we go!
+2023-11-13 16:27:38,262 Off we go!
+2023-11-13 16:27:38,674 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:27:38,675 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:27:38,675 all staff
+2023-11-13 16:27:49,809 Off we go!
+2023-11-13 16:27:50,676 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:27:50,676 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:27:50,676 all staff
+2023-11-13 16:27:57,880 fig_call_vol function triggered with: ['All staff groups', 'Ambulance staff']
+2023-11-13 16:27:57,880 sickness_staff_group values is: ['All staff groups', 'Ambulance staff']
+2023-11-13 16:27:57,880 all staff
+2023-11-13 16:27:58,709 fig_call_vol function triggered with: ['Ambulance staff']
+2023-11-13 16:27:58,710 sickness_staff_group values is: ['Ambulance staff']
+2023-11-13 16:27:58,710 some staff
+2023-11-13 16:29:46,854 fig_call_vol function triggered with: ['Ambulance staff', 'Support to ambulance staff']
+2023-11-13 16:29:46,855 sickness_staff_group values is: ['Ambulance staff', 'Support to ambulance staff']
+2023-11-13 16:29:46,855 some staff
+2023-11-13 16:30:12,554 fig_call_vol function triggered with: []
+2023-11-13 16:30:12,554 sickness_staff_group values is: []
+2023-11-13 16:30:12,554 some staff
+2023-11-13 16:30:14,832 fig_call_vol function triggered with: ['All staff groups']
+2023-11-13 16:30:14,832 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:30:14,832 all staff
+2023-11-13 16:30:18,342 fig_call_vol function triggered with: ['All staff groups', 'Managers']
+2023-11-13 16:30:18,342 sickness_staff_group values is: ['All staff groups', 'Managers']
+2023-11-13 16:30:18,342 all staff
+2023-11-13 16:31:08,328 Off we go!
+2023-11-13 16:31:08,677 fig_call_vol function triggered with: All staff groups
+2023-11-13 16:31:08,677 sickness_staff_group values is: ['All staff groups']
+2023-11-13 16:31:08,677 some staff
+2023-11-13 16:31:13,669 fig_call_vol function triggered with: ['All staff groups', 'Midwives']
+2023-11-13 16:31:13,670 sickness_staff_group values is: ['All staff groups', 'Midwives']
+2023-11-13 16:31:13,670 some staff

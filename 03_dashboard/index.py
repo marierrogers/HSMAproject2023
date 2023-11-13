@@ -33,7 +33,7 @@ app.layout = html.Div([
             dbc.Row([
                 html.Div(id='page-content',style=CONTENT_STYLE), #we'll use a callback to change the layout of this section 
             ]),
-        ]),
+        ], className="w-100 container-fluid"),
         html.Div([
             footer()
         ], className='w-100 container-fluid bg-secondary mt-5', style={"zIndex":'1', 'position':'relative', 'minHeight':'200px'})

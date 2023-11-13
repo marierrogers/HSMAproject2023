@@ -8,8 +8,8 @@ import dash_bootstrap_components as dbc
 CONTENT_STYLE = {
     #"top":0,
    # "marginTop":'2rem',
-    "marginLeft": "2rem",
-    "marginRight": "2rem",
+    "marginLeft": "1rem",
+    "marginRight": "1rem",
 }
 
 SHOW_BUTTON_STYLE = {
@@ -31,23 +31,20 @@ DROPDOWN_STYLE = {
 #####################################
 
 # Dynamnically insert this
-group_lists = {
-    'staff': ['(All)', 'Ambulance Staff', 'Central functions','Doctors']
-}
 
-def dropdown_select(group='staff'):
+def dropdown_select(group_list, title='Staff group', select_id="staff_group_dropdown", multi_sel=False):
 
     staff_sel = html.Div(
         [
-            html.P('Staff group', id='staff_group_dropdown_label', className='lead'),
+            html.P(title, id=f"{select_id}_label", className='lead'),
             dcc.Dropdown(
-                options = group_lists['staff'],
-                value = group_lists['staff'][0],
-                id='staff_group_dropdown',
-                multi=False
+                options = group_list,
+                value = group_list[0] if len(group_list) > 0 else "",
+                id=select_id,
+                multi=multi_sel
             ),
         ],
-        className='pt-2'
+        className='pt-2, w-100'
     )
     return staff_sel
 

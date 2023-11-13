@@ -12,8 +12,8 @@ home = html.Div([
         dbc.Row(
             [
                 dbc.Col([
-                    dropdown_select('staff')
-                ], className='col-3'),
+                    dropdown_select([],'staff')
+                ], className='col-5'),
                 dbc.Col([
                     html.Div(
                         [
@@ -26,7 +26,7 @@ home = html.Div([
                         ],
                         className="pb-3",
                     ), 
-                ], className='col-9')
+                ], className='col-7')
             ],
         ), 
 

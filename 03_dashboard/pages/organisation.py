@@ -14,7 +14,7 @@ organisation = html.Div([
         dbc.Row(
             [
                 dbc.Col([
-                    dropdown_select('staff')
+                    dropdown_select([],'staff')
                 ], className='col-3'),
                 dbc.Col(
                     [
