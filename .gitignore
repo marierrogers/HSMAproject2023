@@ -20,3 +20,6 @@ archive/*
 02_scripts/*.xlsx
 git_ignore/*
 venv
+03_dashboard\__pycache__
+03_dashboard\pages\__pycache__
+03_dashboard\model.log
