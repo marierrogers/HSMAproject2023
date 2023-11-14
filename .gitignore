@@ -15,6 +15,7 @@ archive/*
 .code-workspace
 01_data/*.xlsx
 01_data/*.csv
+01_data/data_wrangling/*.csv
 01_data/archive/*
 02_scripts/*.csv
 02_scripts/*.xlsx
