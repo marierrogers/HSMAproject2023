@@ -52,7 +52,7 @@ clust_group_list.insert(0, 'All group clusters')
 
 ### Layout 1
 sickness = html.Div([
-    html.H1("NHS Staff stickness", className='display-1'),
+    html.H1("NHS Staff Sickness Rates", className='display-1'),
     # create bootstrap grid 1Row x 2 cols
     dbc.Container([
         dbc.Row(
