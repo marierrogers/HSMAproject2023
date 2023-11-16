@@ -5,6 +5,7 @@ from pages.layouts import nav_bar, CONTENT_STYLE, footer, dropdown_select
 from pages.home import home
 from pages.turnover import turnover
 from pages.sickness import sickness
+from pages.reasons import reasons
 from pages.organisation import organisation
 from pages.regression import regression
 from pages.refresh import refresh
@@ -46,13 +47,15 @@ app.layout = html.Div([
               [Input('url', 'pathname')]) #this listens for the url in use
 def display_page(pathname):
     if pathname == '/':
-        return home
+        return turnover
     elif pathname == '/home':
         return home
     elif pathname == '/turnover':
         return turnover
     elif pathname == '/sickness':
         return sickness
+    elif pathname == '/reasons':
+        return reasons
     elif pathname == '/organisation':
         return organisation
     elif pathname == '/regression':
