@@ -42,6 +42,9 @@ benchmark_group_list.insert(0, 'All benchmark groups')
 
 org_code_list= sorted(df_r2['org_code'].unique())
 org_code_list.insert(0,'All organisations')
+
+org_name_list= sorted(df_r2['org_name'].unique())
+org_name_list.insert(0,'All organisations')
 #region_code_list = sorted(df_r2['region_code'].unique())
 nhse_region_name_list = sorted(df_r2['nhse_region_name'].unique())
 nhse_region_name_list.insert(0, 'All regions')
@@ -67,6 +70,9 @@ sickness = html.Div([
                     html.Div([
                         dropdown_select(nhse_region_name_list, 'Region', 'region_dropdown'),
                     ], className="pt-4"),
+                    html.Div([
+                        dropdown_select(org_name_list, 'Organisation name', 'org_name_dropdown'),
+                    ], className="pt-4 small"),
                 ], className='col-4'),
                 dbc.Col(
                     [
