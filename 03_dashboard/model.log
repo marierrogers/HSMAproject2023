@@ -2132,3 +2132,375 @@
 242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
 243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
 244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:25:09,120 Off we go!
+2023-11-20 13:25:09,122 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 13:25:11,015 Off we go!
+2023-11-20 13:25:14,030 Callback triggered with staff group (All)
+2023-11-20 13:25:14,031     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:25:17,390 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:25:17,391 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:25:17,391 some staff
+2023-11-20 13:25:25,915 fig_call_vol function triggered with: ['All staff groups', 'Support to ambulance staff']
+2023-11-20 13:25:25,916 sickness_staff_group values is: ['All staff groups', 'Support to ambulance staff']
+2023-11-20 13:25:25,916 some staff
+2023-11-20 13:26:07,499 fig_call_vol function triggered with: ['All staff groups', 'Support to ambulance staff', 'Ambulance staff']
+2023-11-20 13:26:07,500 sickness_staff_group values is: ['All staff groups', 'Support to ambulance staff', 'Ambulance staff']
+2023-11-20 13:26:07,500 some staff
+2023-11-20 13:33:43,820 Off we go!
+2023-11-20 13:33:43,821 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 13:33:45,697 Off we go!
+2023-11-20 13:33:48,215 Callback triggered with staff group All staff groups
+2023-11-20 13:33:48,215     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:35:01,170 Off we go!
+2023-11-20 13:35:01,308 Callback triggered with staff group All staff groups
+2023-11-20 13:35:01,309     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:35:18,228 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:35:18,228 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:35:18,228 some staff
+2023-11-20 13:35:19,781 Callback triggered with staff group All staff groups
+2023-11-20 13:35:19,782     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:35:32,062 Off we go!
+2023-11-20 13:35:32,185 Callback triggered with staff group All staff groups
+2023-11-20 13:35:32,185     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:35:35,083 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:35:35,083 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:35:35,083 some staff
+2023-11-20 13:35:36,897 Callback triggered with staff group All staff groups
+2023-11-20 13:35:36,897     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:37:00,449 Off we go!
+2023-11-20 13:37:00,584 Callback triggered with staff group All staff groups
+2023-11-20 13:37:00,584     country continent  year  lifeExp       pop    gdpPercap iso_alpha  iso_num
+240  Canada  Americas  1952    68.75  14785584  11367.16112       CAN      124
+241  Canada  Americas  1957    69.96  17010154  12489.95006       CAN      124
+242  Canada  Americas  1962    71.30  18985849  13462.48555       CAN      124
+243  Canada  Americas  1967    72.13  20819767  16076.58803       CAN      124
+244  Canada  Americas  1972    72.88  22284500  18970.57086       CAN      124
+2023-11-20 13:37:17,625 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:37:17,626 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:37:17,626 some staff
+2023-11-20 13:38:32,020 Off we go!
+2023-11-20 13:38:32,021 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 13:38:33,844 Off we go!
+2023-11-20 13:38:33,983 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:38:33,983 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:38:33,983 some staff
+2023-11-20 13:38:57,756 Off we go!
+2023-11-20 13:38:57,852 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:38:57,852 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:38:57,852 some staff
+2023-11-20 13:39:08,000 Off we go!
+2023-11-20 13:39:08,594 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:39:08,594 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:39:08,594 some staff
+2023-11-20 13:39:14,089 Off we go!
+2023-11-20 13:39:14,613 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:39:14,613 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:39:14,613 some staff
+2023-11-20 13:45:04,378 Off we go!
+2023-11-20 13:45:04,487 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:45:04,487 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:45:04,487 some staff
+2023-11-20 13:45:41,379 Off we go!
+2023-11-20 13:45:41,618 fig_call_vol function triggered with: All staff groups
+2023-11-20 13:45:41,619 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:45:41,619 some staff
+2023-11-20 13:45:43,565 fig_turnover function triggered with: All staff groups
+2023-11-20 13:45:43,565 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:45:43,565 some staff
+2023-11-20 13:46:52,894 Off we go!
+2023-11-20 13:46:53,001 fig_turnover function triggered with: All staff groups
+2023-11-20 13:46:53,002 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:46:53,002 some staff
+2023-11-20 13:47:12,862 fig_turnover function triggered with: ['All staff groups', 'Nurses & health visitors']
+2023-11-20 13:47:12,862 sickness_staff_group values is: ['All staff groups', 'Nurses & health visitors']
+2023-11-20 13:47:12,863 some staff
+2023-11-20 13:47:14,796 fig_turnover function triggered with: ['Nurses & health visitors']
+2023-11-20 13:47:14,796 sickness_staff_group values is: ['Nurses & health visitors']
+2023-11-20 13:47:14,797 some staff
+2023-11-20 13:49:06,023 Off we go!
+2023-11-20 13:49:06,150 fig_turnover function triggered with: All staff groups
+2023-11-20 13:49:06,150 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:49:06,150 some staff
+2023-11-20 13:49:16,469 fig_turnover function triggered with: All staff groups
+2023-11-20 13:49:16,469 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:49:16,469 some staff
+2023-11-20 13:49:43,152 Off we go!
+2023-11-20 13:49:43,496 fig_turnover function triggered with: All staff groups
+2023-11-20 13:49:43,497 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:49:43,497 some staff
+2023-11-20 13:49:55,461 Off we go!
+2023-11-20 13:49:55,537 fig_turnover function triggered with: All staff groups
+2023-11-20 13:49:55,537 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:49:55,537 some staff
+2023-11-20 13:50:14,833 fig_turnover function triggered with: ['All staff groups', 'Nurses & health visitors']
+2023-11-20 13:50:14,833 sickness_staff_group values is: ['All staff groups', 'Nurses & health visitors']
+2023-11-20 13:50:14,833 some staff
+2023-11-20 13:50:19,881 fig_turnover function triggered with: ['All staff groups', 'Nurses & health visitors', 'Ambulance staff']
+2023-11-20 13:50:19,881 sickness_staff_group values is: ['All staff groups', 'Nurses & health visitors', 'Ambulance staff']
+2023-11-20 13:50:19,881 some staff
+2023-11-20 13:52:10,086 Off we go!
+2023-11-20 13:52:10,512 fig_turnover function triggered with: All staff groups
+2023-11-20 13:52:10,512 sickness_staff_group values is: ['All staff groups']
+2023-11-20 13:52:10,512 some staff
+2023-11-20 13:52:13,938 fig_turnover function triggered with: ['All staff groups', 'HCHS doctors (exc. junior Drs)']
+2023-11-20 13:52:13,938 sickness_staff_group values is: ['All staff groups', 'HCHS doctors (exc. junior Drs)']
+2023-11-20 13:52:13,938 some staff
+2023-11-20 13:52:16,511 fig_turnover function triggered with: ['All staff groups', 'HCHS doctors (exc. junior Drs)', 'Nurses & health visitors']
+2023-11-20 13:52:16,511 sickness_staff_group values is: ['All staff groups', 'HCHS doctors (exc. junior Drs)', 'Nurses & health visitors']
+2023-11-20 13:52:16,511 some staff
+2023-11-20 13:52:19,269 fig_turnover function triggered with: ['All staff groups', 'HCHS doctors (exc. junior Drs)', 'Nurses & health visitors', 'Support to ST&T staff']
+2023-11-20 13:52:19,269 sickness_staff_group values is: ['All staff groups', 'HCHS doctors (exc. junior Drs)', 'Nurses & health visitors', 'Support to ST&T staff']
+2023-11-20 13:52:19,269 some staff
+2023-11-20 13:52:21,939 fig_turnover function triggered with: ['All staff groups', 'HCHS doctors (exc. junior Drs)', 'Nurses & health visitors', 'Support to ST&T staff', 'Senior managers']
+2023-11-20 13:52:21,939 sickness_staff_group values is: ['All staff groups', 'HCHS doctors (exc. junior Drs)', 'Nurses & health visitors', 'Support to ST&T staff', 'Senior managers']
+2023-11-20 13:52:21,939 some staff
+2023-11-20 14:06:30,854 Off we go!
+2023-11-20 14:06:30,855 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 14:06:32,732 Off we go!
+2023-11-20 14:06:34,128 fig_turnover function triggered with: All staff groups
+2023-11-20 14:06:34,128 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:06:34,128 some staff
+2023-11-20 14:07:08,306 fig_turnover function triggered with: ['All staff groups', 'Central functions']
+2023-11-20 14:07:08,306 sickness_staff_group values is: ['All staff groups', 'Central functions']
+2023-11-20 14:07:08,306 some staff
+2023-11-20 14:07:10,712 fig_turnover function triggered with: ['All staff groups', 'Central functions', 'Support to ambulance staff']
+2023-11-20 14:07:10,713 sickness_staff_group values is: ['All staff groups', 'Central functions', 'Support to ambulance staff']
+2023-11-20 14:07:10,713 some staff
+2023-11-20 14:07:45,255 Off we go!
+2023-11-20 14:07:45,346 fig_turnover function triggered with: All staff groups
+2023-11-20 14:07:45,346 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:07:45,346 some staff
+2023-11-20 14:08:16,284 Off we go!
+2023-11-20 14:08:16,456 fig_turnover function triggered with: All staff groups
+2023-11-20 14:08:16,456 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:08:16,456 some staff
+2023-11-20 14:09:00,624 Off we go!
+2023-11-20 14:09:01,465 fig_turnover function triggered with: All staff groups
+2023-11-20 14:09:01,466 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:09:01,466 some staff
+2023-11-20 14:09:16,987 Off we go!
+2023-11-20 14:09:17,067 fig_turnover function triggered with: All staff groups
+2023-11-20 14:09:17,068 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:09:17,068 some staff
+2023-11-20 14:09:28,247 Off we go!
+2023-11-20 14:09:28,440 fig_turnover function triggered with: All staff groups
+2023-11-20 14:09:28,440 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:09:28,440 some staff
+2023-11-20 14:09:36,404 Off we go!
+2023-11-20 14:09:37,430 fig_turnover function triggered with: All staff groups
+2023-11-20 14:09:37,430 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:09:37,430 some staff
+2023-11-20 14:10:28,827 Off we go!
+2023-11-20 14:10:28,919 fig_turnover function triggered with: All staff groups
+2023-11-20 14:10:28,919 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:10:28,919 some staff
+2023-11-20 14:10:35,246 fig_turnover function triggered with: ['All staff groups', 'Managers']
+2023-11-20 14:10:35,246 sickness_staff_group values is: ['All staff groups', 'Managers']
+2023-11-20 14:10:35,246 some staff
+2023-11-20 14:11:00,813 fig_turnover function triggered with: ['All staff groups']
+2023-11-20 14:11:00,813 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:11:00,813 some staff
+2023-11-20 14:12:11,066 Off we go!
+2023-11-20 14:12:11,140 fig_turnover function triggered with: All staff groups
+2023-11-20 14:12:11,140 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:12:11,140 some staff
+2023-11-20 14:15:08,872 Off we go!
+2023-11-20 14:15:08,954 fig_turnover function triggered with: All staff groups
+2023-11-20 14:15:08,954 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:15:08,954 some staff
+2023-11-20 14:15:12,470 fig_call_vol function triggered with: All staff groups
+2023-11-20 14:15:12,470 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:15:12,470 some staff
+2023-11-20 14:15:14,779 fig_turnover function triggered with: All staff groups
+2023-11-20 14:15:14,779 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:15:14,779 some staff
+2023-11-20 14:55:57,550 Off we go!
+2023-11-20 14:55:57,551 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 14:55:59,403 Off we go!
+2023-11-20 14:56:01,364 fig_turnover function triggered with: All staff groups
+2023-11-20 14:56:01,364 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:56:01,364 some staff
+2023-11-20 14:56:19,637 fig_turnover function triggered with: All staff groups
+2023-11-20 14:56:19,638 sickness_staff_group values is: ['All staff groups']
+2023-11-20 14:56:19,638 some staff
+2023-11-20 15:26:44,109 Off we go!
+2023-11-20 15:26:44,111 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 15:26:46,152 Off we go!
+2023-11-20 15:26:49,378 Off we go!
+2023-11-20 15:27:19,641 fig_turnover function triggered with: All staff groups
+2023-11-20 15:27:19,641 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:27:19,641 some staff
+2023-11-20 15:27:19,665 fig_turnover function triggered with: All staff groups
+2023-11-20 15:27:19,665 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:27:19,665 some staff
+2023-11-20 15:42:07,090 Off we go!
+2023-11-20 15:42:07,092 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 15:42:08,977 Off we go!
+2023-11-20 15:42:09,106 fig_turnover function triggered with: All staff groups
+2023-11-20 15:42:09,106 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:42:09,106 some staff
+2023-11-20 15:42:19,634 fig_turnover function triggered with: All staff groups
+2023-11-20 15:42:19,634 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:42:19,635 some staff
+2023-11-20 15:52:27,402 Off we go!
+2023-11-20 15:52:27,528 fig_turnover function triggered with: All staff groups
+2023-11-20 15:52:27,528 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:52:27,528 some staff
+2023-11-20 15:55:46,472 Off we go!
+2023-11-20 15:55:46,473 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 15:55:48,381 Off we go!
+2023-11-20 15:55:49,466 fig_turnover function triggered with: All staff groups
+2023-11-20 15:55:49,466 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:55:49,466 some staff
+2023-11-20 15:56:19,615 fig_turnover function triggered with: All staff groups
+2023-11-20 15:56:19,616 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:56:19,616 some staff
+2023-11-20 15:59:03,793 Off we go!
+2023-11-20 15:59:19,616 fig_turnover function triggered with: All staff groups
+2023-11-20 15:59:19,617 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:59:19,617 some staff
+2023-11-20 15:59:19,626 fig_turnover function triggered with: All staff groups
+2023-11-20 15:59:19,629 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:59:19,629 some staff
+2023-11-20 15:59:32,612 Off we go!
+2023-11-20 15:59:33,557 fig_turnover function triggered with: All staff groups
+2023-11-20 15:59:33,558 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:59:33,559 some staff
+2023-11-20 15:59:52,352 Off we go!
+2023-11-20 15:59:52,353 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 15:59:54,239 Off we go!
+2023-11-20 15:59:55,356 fig_turnover function triggered with: All staff groups
+2023-11-20 15:59:55,356 sickness_staff_group values is: ['All staff groups']
+2023-11-20 15:59:55,356 some staff
+2023-11-20 16:00:19,591 fig_turnover function triggered with: All staff groups
+2023-11-20 16:00:19,592 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:00:19,592 some staff
+2023-11-20 16:00:29,504 Off we go!
+2023-11-20 16:00:29,581 fig_turnover function triggered with: All staff groups
+2023-11-20 16:00:29,582 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:00:29,582 some staff
+2023-11-20 16:00:29,665 fig_turnover function triggered with: All staff groups
+2023-11-20 16:00:29,665 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:00:29,665 some staff
+2023-11-20 16:01:15,443 fig_turnover function triggered with: All staff groups
+2023-11-20 16:01:15,444 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:01:15,444 some staff
+2023-11-20 16:01:15,547 fig_turnover function triggered with: All staff groups
+2023-11-20 16:01:15,547 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:01:15,547 some staff
+2023-11-20 16:01:19,591 fig_turnover function triggered with: All staff groups
+2023-11-20 16:01:19,591 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:01:19,591 some staff
+2023-11-20 16:01:19,683 fig_turnover function triggered with: All staff groups
+2023-11-20 16:01:19,683 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:01:19,684 some staff
+2023-11-20 16:04:50,501 Off we go!
+2023-11-20 16:04:50,620 fig_turnover function triggered with: All staff groups
+2023-11-20 16:04:50,620 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:04:50,620 some staff
+2023-11-20 16:05:19,601 fig_turnover function triggered with: All staff groups
+2023-11-20 16:05:19,601 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:05:19,601 some staff
+2023-11-20 16:05:29,747 Off we go!
+2023-11-20 16:05:30,416 fig_turnover function triggered with: All staff groups
+2023-11-20 16:05:30,416 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:05:30,416 some staff
+2023-11-20 16:05:30,483 fig_turnover function triggered with: All staff groups
+2023-11-20 16:05:30,483 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:05:30,483 some staff
+2023-11-20 16:06:19,601 fig_turnover function triggered with: All staff groups
+2023-11-20 16:06:19,602 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:06:19,602 some staff
+2023-11-20 16:06:19,688 fig_turnover function triggered with: All staff groups
+2023-11-20 16:06:19,688 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:06:19,688 some staff
+2023-11-20 16:06:57,375 Off we go!
+2023-11-20 16:06:57,491 fig_turnover function triggered with: All staff groups
+2023-11-20 16:06:57,491 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:06:57,491 some staff
+2023-11-20 16:07:19,594 fig_turnover function triggered with: All staff groups
+2023-11-20 16:07:19,595 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:07:19,595 some staff
+2023-11-20 16:09:23,717 Off we go!
+2023-11-20 16:09:24,421 fig_turnover function triggered with: All staff groups
+2023-11-20 16:09:24,421 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:09:24,421 some staff
+2023-11-20 16:09:24,497 fig_turnover function triggered with: All staff groups
+2023-11-20 16:09:24,497 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:09:24,497 some staff
+2023-11-20 16:09:57,734 Off we go!
+2023-11-20 16:09:57,834 fig_turnover function triggered with: All staff groups
+2023-11-20 16:09:57,834 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:09:57,835 some staff
+2023-11-20 16:10:19,592 fig_turnover function triggered with: All staff groups
+2023-11-20 16:10:19,592 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:10:19,592 some staff
+2023-11-20 16:14:23,509 Off we go!
+2023-11-20 16:14:23,511 Dash is running on http://127.0.0.1:8050/
+
+2023-11-20 16:14:25,395 Off we go!
+2023-11-20 16:14:29,410 fig_call_vol function triggered with: All staff groups
+2023-11-20 16:14:29,411 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:14:29,411 some staff
+2023-11-20 16:14:36,742 fig_turnover function triggered with: All staff groups
+2023-11-20 16:14:36,742 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:14:36,743 some staff
+2023-11-20 16:15:19,608 fig_turnover function triggered with: All staff groups
+2023-11-20 16:15:19,610 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:15:19,610 some staff
+2023-11-20 16:15:58,217 Off we go!
+2023-11-20 16:15:58,337 fig_turnover function triggered with: All staff groups
+2023-11-20 16:15:58,337 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:15:58,337 some staff
+2023-11-20 16:16:10,507 Off we go!
+2023-11-20 16:16:10,579 fig_turnover function triggered with: All staff groups
+2023-11-20 16:16:10,580 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:16:10,580 some staff
+2023-11-20 16:16:12,372 fig_call_vol function triggered with: All staff groups
+2023-11-20 16:16:12,372 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:16:12,372 some staff
+2023-11-20 16:16:13,946 fig_turnover function triggered with: All staff groups
+2023-11-20 16:16:13,947 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:16:13,947 some staff
+2023-11-20 16:16:19,565 fig_turnover function triggered with: All staff groups
+2023-11-20 16:16:19,566 sickness_staff_group values is: ['All staff groups']
+2023-11-20 16:16:19,566 some staff
