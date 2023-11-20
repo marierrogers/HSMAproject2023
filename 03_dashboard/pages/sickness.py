@@ -64,9 +64,9 @@ sickness = html.Div([
                     html.Div([
                         dropdown_select(staff_group_list, 'Staff groups', 'staff_group_dropdown', True),
                     ]),
-                    html.Div([
-                        dropdown_select(benchmark_group_list, 'Benchmarking groups', 'benchmark_group_dropdown'),
-                    ], className="pt-4"),
+                    # html.Div([
+                    #     dropdown_select(benchmark_group_list, 'Benchmarking groups', 'benchmark_group_dropdown'),
+                    # ], className="pt-4"),
                     html.Div([
                         dropdown_select(nhse_region_name_list, 'Region', 'region_dropdown'),
                     ], className="pt-4"),

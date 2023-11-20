@@ -4,6 +4,7 @@ from pages.layouts import SHOW_BUTTON_STYLE, HIDE_BUTTON_STYLE, dropdown_select
 from app import app
 import pandas as pd
 import plotly.express as px
+from utils import flatten
 
 # Load in and prepare data
 url_t = 'data/annual_turnover.csv'
@@ -17,10 +18,14 @@ benchmark_group_list = sorted(df_t1['benchmark_group'].unique())
 benchmark_group_list.insert(0, 'All benchmark groups')
 
 org_name_list= sorted(df_t1['org_name'].unique())
-org_name_list.insert(0,'All organisations')
+#org_name_list.insert(0,'All organisations')
 #region_code_list = sorted(df_r2['region_code'].unique())
 nhse_region_name_list = sorted(df_t1['nhse_region_name'].unique())
 nhse_region_name_list.insert(0, 'All regions')
+
+combo_region_dict = df_t1[['nhse_region_name', 'org_name']].drop_duplicates().set_index('nhse_region_name').stack().groupby(level=0).apply(list).to_dict()
+combo_region_list = list(combo_region_dict.keys())
+combo_region_list.insert(0, 'All regions')
 
 ### Layout 1
 turnover = html.Div([
@@ -33,14 +38,14 @@ turnover = html.Div([
                     html.Div([
                         dropdown_select(staff_group_list, 'Staff groups', 'staff_group_dropdown', True),
                     ]),
+                    # html.Div([
+                    #     dropdown_select(benchmark_group_list, 'Benchmarking groups', 'benchmark_group_dropdown'),
+                    # ], className="pt-4"),
                     html.Div([
-                        dropdown_select(benchmark_group_list, 'Benchmarking groups', 'benchmark_group_dropdown'),
+                        dropdown_select(combo_region_list, 'Region', 'region_dropdown'),
                     ], className="pt-4"),
                     html.Div([
-                        dropdown_select(nhse_region_name_list, 'Region', 'region_dropdown'),
-                    ], className="pt-4"),
-                    html.Div([
-                        dropdown_select(org_name_list, 'Organisation name', 'org_name_dropdown'),
+                        dropdown_select(org_name_list, title='Organisation name', select_id='org_name_dropdown'),
                     ], className="pt-4 small"),
                 ], className='col-4'),
                 dbc.Col(
@@ -54,6 +59,17 @@ turnover = html.Div([
             ],
         ), 
     ]),
+
+
+@app.callback(
+    Output('org_name_dropdown', 'options'),
+    Input('region_dropdown', 'value'))
+def set_organisation_options(selected_region):
+    print('Updating dropdowns called')
+    return_list = combo_region_dict[selected_region] if selected_region != 'All regions' else list(flatten(combo_region_dict.values()))
+    return_list_sorted = sorted(return_list)
+    return_list_sorted.insert(0, 'All organisations')
+    return return_list_sorted
 
 
 @app.callback(
