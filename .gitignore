@@ -8,7 +8,6 @@
 01_data/data_wrangling/tempdir/*
 02_scripts/temp/*
 02_scripts/archive/*
-03_data_wrangling/*
 .venv
 .zip
 archive/*
@@ -21,8 +20,7 @@ archive/*
 02_scripts/*.xlsx
 git_ignore/*
 venv
-03_dashboard\__pycache__
-03_dashboard\pages\__pycache__
-03_dashboard\model.log
-
+03_dashboard/__pycache__/*
+03_dashboard/pages/__pycache__/*
+03_dashboard/model.log
 HSMAproject2023.code-workspace
