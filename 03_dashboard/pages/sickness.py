@@ -140,7 +140,6 @@ def fig_call_vol(staff_group, region, org):
 
     app.logger.info(f"sickness_staff_group values is: {sickness_staff_group}")
 
-    app.logger.info('some staff')
    # df = df_r2[df_r2['staff_group'].isin(sickness_staff_group)]
     df = df_r2[(df_r2['staff_group'].isin(turnover_staff_group)) & (df_r2['org_name'].isin(turnover_org_group))]
 
