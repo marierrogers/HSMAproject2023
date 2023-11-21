@@ -50,7 +50,7 @@ turnover = html.Div([
                 ], className='col-4'),
                 dbc.Col(
                     [
-                        html.P('Insert some explanatory text here....', className='lead'),
+                        html.P('Insert some explanatory text here....', id='info-turnover', className='lead'),
                         html.Div(id='fig-turnover'),
                     ],
                     className="pb-3 col-8",
@@ -74,24 +74,43 @@ def set_organisation_options(selected_region):
 
 @app.callback(
     Output('fig-turnover', 'children'), 
-    Input('staff_group_dropdown', 'value')
+    Output('info-turnover', 'children'),
+    Input('staff_group_dropdown', 'value'),
+    Input('region_dropdown', 'value'),
+    Input('org_name_dropdown', 'value')
 )
-def fig_turnover(staff_group):
+def fig_turnover(staff_group, region, org):
 
-    app.logger.info(f"fig_turnover function triggered with: {staff_group}")
+    app.logger.info(f"fig_turnover function triggered with: {staff_group}, {region}, {org}")
     if type(staff_group) != list:
         turnover_staff_group = [staff_group]
     else:
         turnover_staff_group = staff_group
 
-    app.logger.info(f"sickness_staff_group values is: {turnover_staff_group}")
+    turnover_region_group = sorted(df_t1['nhse_region_name'].unique()) if region == 'All regions' else [region]
 
-    app.logger.info('some staff')
-    df = df_t1[df_t1['staff_group'].isin(turnover_staff_group)]
+    if org != 'All organisations' and region == 'All regions': 
+        turnover_org_group = [org]
+    elif org == 'All organisations' and region == 'All regions':
+        turnover_org_group = list(flatten(combo_region_dict.values()))
+    else:
+        if org in str(combo_region_dict[region]):
+            turnover_org_group = [org]
+        else:
+            org = 'All organisations'
+            turnover_org_group = combo_region_dict[region]
 
+    info_caption = f"Line chart showing Staff turnover for {', '.join(turnover_staff_group)}, {region}, {org}"
+
+    # app.logger.info(f"turnover_staff_group values is: {turnover_staff_group}")
+    app.logger.info(f"turnover_org_group values is: {org}")
+
+    df = df_t1[(df_t1['staff_group'].isin(turnover_staff_group)) & (df_t1['org_name'].isin(turnover_org_group))]
+
+    # Note staff group is in as you can choose more than one staff group
     fig_df = df.groupby(['date', 'staff_group']).agg({'leave_fte':'sum',
                                                     'denom_fte_mean':'sum'}).reset_index()
-    fig_df['fte_rate'] = fig_df['leave_fte']/fig_df['denom_fte_mean']
+    fig_df['fte_rate'] = round(fig_df['leave_fte']/fig_df['denom_fte_mean']*100,2)
 
 
     fig = px.line(fig_df, x = 'date', y = 'fte_rate', color='staff_group', markers=True,
@@ -109,4 +128,4 @@ def fig_turnover(staff_group):
         x=1
     ))
 
-    return dcc.Graph(figure=fig)
+    return [dcc.Graph(figure=fig), info_caption]
