@@ -52,6 +52,7 @@ turnover = html.Div([
                 dbc.Col(
                     [
                         html.P('Insert some explanatory text here....', id='info-turnover', className='lead'),
+                        dcc.RadioItems(['Full-time equivalent', 'Head count'], value="Full-time equivalent", id="fte-hc"),
                         html.Div(id='fig-turnover'),
                     ],
                     className="pb-3 col-8",
@@ -78,11 +79,12 @@ def set_organisation_options(selected_region):
     Output('info-turnover', 'children'),
     Input('staff_group_dropdown', 'value'),
     Input('region_dropdown', 'value'),
-    Input('org_name_dropdown', 'value')
+    Input('org_name_dropdown', 'value'),
+    Input('fte-hc', 'value')
 )
-def fig_turnover(staff_group, region, org):
+def fig_turnover(staff_group, region, org, fte_hc):
 
-    app.logger.info(f"fig_turnover function triggered with: {staff_group}, {region}, {org}")
+    app.logger.info(f"fig_turnover function triggered with: {staff_group}, {region}, {org}, {fte_hc}")
     if type(staff_group) != list:
         turnover_staff_group = [staff_group]
     else:
@@ -109,18 +111,39 @@ def fig_turnover(staff_group, region, org):
     df = df_t1[(df_t1['staff_group'].isin(turnover_staff_group)) & (df_t1['org_name'].isin(turnover_org_group))]
 
     # Note staff group is in as you can choose more than one staff group
-    fig_df = df.groupby(['date', 'staff_group']).agg({'leave_fte':'sum',
-                                                    'denom_fte_mean':'sum'}).reset_index()
-    fig_df['fte_rate'] = round(fig_df['leave_fte']/fig_df['denom_fte_mean']*100,2)
+    if fte_hc == "Full-time equivalent":
+        fig_df = df.groupby(['date', 'staff_group']).agg({'leave_fte':'sum',
+                                                        'denom_fte_mean':'sum'}).reset_index()
+        fig_df['fte_rate'] = round(fig_df['leave_fte']/fig_df['denom_fte_mean']*100,2)
+
+        pre_pandemic_indicator = fig_df[fig_df['date'] == '2020-02-01']['fte_rate']
+        print(f"Pre pandemic value is {pre_pandemic_indicator}")
+        data_point = 'fte_rate'
+    else :
+        fig_df = df.groupby(['date', 'staff_group']).agg({'leave_hc':'sum',
+                                                        'denom_hc_mean':'sum'}).reset_index()
+        fig_df['hc_rate'] = round(fig_df['leave_hc']/fig_df['denom_hc_mean']*100,2)
+
+        pre_pandemic_indicator = fig_df[fig_df['date'] == '2020-02-01']['hc_rate']
+        print(f"Pre pandemic value is {pre_pandemic_indicator}")
+        data_point = 'hc_rate'
 
 
-    fig = px.line(fig_df, x = 'date', y = 'fte_rate', color='staff_group', markers=True,
+    fig = px.line(fig_df, x = 'date', y = data_point, color='staff_group', markers=True,
                   labels={
                      "date": "Date",
-                     "fte_rate": "Turnover Rate (%)",
+                     data_point : "Turnover Rate (%)",
                      "staff_group": "Staff groups"
                  },)
     
+    fig.add_hline(
+        y=pre_pandemic_indicator.iloc[0],
+        line_dash="dot",
+        annotation_text="Pre-pandemic baseline indicator", 
+        annotation_position="bottom right",
+        annotation_font_size=16
+    )
+
     fig.update_layout(legend=dict(
         orientation="h",
         yanchor="bottom",
@@ -128,5 +151,7 @@ def fig_turnover(staff_group, region, org):
         xanchor="right",
         x=1
     ))
+
+
 
     return [dcc.Graph(figure=fig), info_caption]
