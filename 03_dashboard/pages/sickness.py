@@ -34,8 +34,6 @@ df_r2['rolling_days_available'] = df_r2.groupby(['org_code',
 # Calculate the rolling sickness absence rate
 df_r2['annual_sickness_absence'] = df_r2['rolling_days_lost'] / df_r2['rolling_days_available']
 
-
-
 # Group lists
 staff_group_list = sorted(df_r2['staff_group'].unique())
 benchmark_group_list = sorted(df_r2['benchmark_group'].unique())

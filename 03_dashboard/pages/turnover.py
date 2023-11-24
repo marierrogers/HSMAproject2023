@@ -12,6 +12,7 @@ df_t = pd.read_csv(url_t, parse_dates=['DATE'])
 df_t.rename(columns=str.lower,inplace=True)
 # No turnover data before April 2018
 df_t1 = df_t[df_t['date'] > '2018-03-01']
+
 # Group lists
 staff_group_list = sorted(df_t1['staff_group'].unique())
 benchmark_group_list = sorted(df_t1['benchmark_group'].unique())
