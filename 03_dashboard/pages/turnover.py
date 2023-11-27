@@ -8,23 +8,23 @@ from utils import flatten
 
 # Load in and prepare data
 url_t = 'data/annual_turnover.csv'
-df_t = pd.read_csv(url_t, parse_dates=['DATE'])
+df_t = pd.read_csv(url_t, parse_dates=['month_year'])
 df_t.rename(columns=str.lower,inplace=True)
 # No turnover data before April 2018
-df_t1 = df_t[df_t['date'] > '2018-03-01']
+df_t1 = df_t[df_t['month_year'] > '2018-03-01']
 
 # Group lists
 staff_group_list = sorted(df_t1['staff_group'].unique())
-benchmark_group_list = sorted(df_t1['benchmark_group'].unique())
+benchmark_group_list = sorted(df_t1['org_type'].unique())
 benchmark_group_list.insert(0, 'All benchmark groups')
 
 org_name_list= sorted(df_t1['org_name'].unique())
 #org_name_list.insert(0,'All organisations')
 #region_code_list = sorted(df_r2['region_code'].unique())
-nhse_region_name_list = sorted(df_t1['nhse_region_name'].unique())
+nhse_region_name_list = sorted(df_t1['region_name'].unique())
 nhse_region_name_list.insert(0, 'All regions')
 
-combo_region_dict = df_t1[['nhse_region_name', 'org_name']].drop_duplicates().set_index('nhse_region_name').stack().groupby(level=0).apply(list).to_dict()
+combo_region_dict = df_t1[['region_name', 'org_name']].drop_duplicates().set_index('region_name').stack().groupby(level=0).apply(list).to_dict()
 combo_region_list = list(combo_region_dict.keys())
 combo_region_list.insert(0, 'All regions')
 
@@ -90,7 +90,7 @@ def fig_turnover(staff_group, region, org, fte_hc):
     else:
         turnover_staff_group = staff_group
 
-    turnover_region_group = sorted(df_t1['nhse_region_name'].unique()) if region == 'All regions' else [region]
+    turnover_region_group = sorted(df_t1['region_name'].unique()) if region == 'All regions' else [region]
 
     if org != 'All organisations' and region == 'All regions': 
         turnover_org_group = [org]
@@ -112,26 +112,26 @@ def fig_turnover(staff_group, region, org, fte_hc):
 
     # Note staff group is in as you can choose more than one staff group
     if fte_hc == "Full-time equivalent":
-        fig_df = df.groupby(['date', 'staff_group']).agg({'leave_fte':'sum',
+        fig_df = df.groupby(['month_year', 'staff_group']).agg({'leave_fte':'sum',
                                                         'denom_fte_mean':'sum'}).reset_index()
         fig_df['fte_rate'] = round(fig_df['leave_fte']/fig_df['denom_fte_mean']*100,2)
 
-        pre_pandemic_indicator = fig_df[fig_df['date'] == '2020-02-01']['fte_rate']
+        pre_pandemic_indicator = fig_df[fig_df['month_year'] == '2020-02-01']['fte_rate']
         print(f"Pre pandemic value is {pre_pandemic_indicator}")
         data_point = 'fte_rate'
     else :
-        fig_df = df.groupby(['date', 'staff_group']).agg({'leave_hc':'sum',
+        fig_df = df.groupby(['month_year', 'staff_group']).agg({'leave_hc':'sum',
                                                         'denom_hc_mean':'sum'}).reset_index()
         fig_df['hc_rate'] = round(fig_df['leave_hc']/fig_df['denom_hc_mean']*100,2)
 
-        pre_pandemic_indicator = fig_df[fig_df['date'] == '2020-02-01']['hc_rate']
+        pre_pandemic_indicator = fig_df[fig_df['month_year'] == '2020-02-01']['hc_rate']
         print(f"Pre pandemic value is {pre_pandemic_indicator}")
         data_point = 'hc_rate'
 
 
-    fig = px.line(fig_df, x = 'date', y = data_point, color='staff_group', markers=True,
+    fig = px.line(fig_df, x = 'month_year', y = data_point, color='staff_group', markers=True,
                   labels={
-                     "date": "Date",
+                     "month_year": "Date",
                      data_point : "Turnover Rate (%)",
                      "staff_group": "Staff groups"
                  },)
