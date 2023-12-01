@@ -1,53 +1,20 @@
 from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
-from pages.layouts import SHOW_BUTTON_STYLE, HIDE_BUTTON_STYLE, dropdown_select
+from pages.layouts import SHOW_BUTTON_STYLE, HIDE_BUTTON_STYLE, dropdown_select, date_select
 from app import app
 import pandas as pd
 import plotly.express as px
+from datetime import date, datetime
 
 # Load in and prepare data
-url_r2 = 'data/sickness_benchmarking.csv'
+url_r2 = 'data/sickness_reasons.csv'
 df_r2 = pd.read_csv(url_r2, parse_dates=['DATE'])
 
-trust_types_todrop = ['Clinical Commissioning Group','Integrated Care Board']
-df_r2 = df_r2[~df_r2['CLUSTER_GROUP'].isin(trust_types_todrop)]
-#df_r2 = df_r2.drop(['ORG_NAME',
- #                   'NHSE_REGION_CODE','CLUSTER_GROUP','file_date'],axis=1)
 df_r2.rename(columns=str.lower,inplace=True)
-merge_cols = ['month_year', 'org_code','region_name','staff_group']
-df_r2['sickness_absence'] = df_r2['fte_days_lost']/df_r2['fte_days_available']
-df_r2 = df_r2.reset_index(drop=True)
-
 df_r2['date'] = pd.to_datetime(df_r2['date'])
-
-# Sort the DataFrame by organisation, staff_group, and month
-df_r2.sort_values(by=['org_code', 'staff_group', 'date'], inplace=True)
-
-# Calculate the rolling sums for days lost and days available
-df_r2['rolling_days_lost'] = df_r2.groupby(['org_code', 
-                        'staff_group'])['fte_days_lost'].rolling(window=12, min_periods=1).sum().reset_index(level=[0, 1], drop=True)
-
-df_r2['rolling_days_available'] = df_r2.groupby(['org_code', 
-                        'staff_group'])['fte_days_available'].rolling(window=12, min_periods=1).sum().reset_index(level=[0, 1], drop=True)
-
-# Calculate the rolling sickness absence rate
-df_r2['annual_sickness_absence'] = df_r2['rolling_days_lost'] / df_r2['rolling_days_available']
-
-
 
 # Group lists
 staff_group_list = sorted(df_r2['staff_group'].unique())
-benchmark_group_list = sorted(df_r2['benchmark_group'].unique())
-benchmark_group_list.insert(0, 'All benchmark groups')
-
-org_code_list= sorted(df_r2['org_code'].unique())
-org_code_list.insert(0,'All organisations')
-#region_code_list = sorted(df_r2['region_code'].unique())
-nhse_region_name_list = sorted(df_r2['nhse_region_name'].unique())
-nhse_region_name_list.insert(0, 'All regions')
-
-clust_group_list = sorted(df_r2['cluster_group'].unique())
-clust_group_list.insert(0, 'All group clusters')
 
 
 ### Layout 1
@@ -62,20 +29,17 @@ reasons = html.Div([
                         dropdown_select(staff_group_list, 'Staff groups', 'staff_group_dropdown', True),
                     ]),
                     html.Div([
-                        dropdown_select(benchmark_group_list, 'Benchmarking groups', 'benchmark_group_dropdown'),
-                    ], className="pt-4"),
-                    html.Div([
-                        dropdown_select(nhse_region_name_list, 'Region', 'region_dropdown'),
-                    ], className="pt-4"),
+                        date_select(df_r2, 'Date range', 'reason_date_range','date'),
+                    ], className='pt-4'),
                 ], className='col-4'),
                 dbc.Col(
                     [
-                        html.P('Insert some explanatory text here....', className='lead'),
+                        html.P('Insert some explanatory text here....', className='lead',id='info-reasons',),
                         html.Div(id='fig-reasons'),
                     ],
-                    className="pb-3 col-8",
+                    className="pb-3 col-8"
                 ), 
-            ], className='col-12') 
+            ], className='col-12', style={"height":"1000px"}) 
         ],
     ), 
 ])
@@ -84,28 +48,81 @@ reasons = html.Div([
 
 @app.callback(
     Output('fig-reasons', 'children'), 
-    Input('staff_group_dropdown', 'value')
+    Output('info-reasons', 'children'),
+    Input('staff_group_dropdown', 'value'),
+    Input('reason_date_range', 'start_date'),
+        Input('reason_date_range', 'end_date')
 )
-def fig_call_vol(staff_group):
+def fig_reasons_sick(staff_group, start_date, end_date):
 
-    app.logger.info(f"fig_call_vol function triggered with: {staff_group}")
+    date_format = "%Y-%m-%dT%H:%M:%S"
+    date_only_format = "%Y-%m-%d"
+    min_date = df_r2['date'].min()
+    max_date = df_r2['date'].max()
+
+    if start_date is None:
+        sd = min_date
+    elif len(start_date) == 10:
+        sd = datetime.strptime(start_date, date_only_format)
+    else:
+        sd = datetime.strptime(start_date, date_format)
+
+    if end_date is None:
+        ed = max_date
+    elif len(end_date) == 10:
+        ed = datetime.strptime(end_date, date_only_format)
+    else:
+        ed = datetime.strptime(end_date, date_format)
+
+
     if type(staff_group) != list:
         sickness_staff_group = [staff_group]
     else:
         sickness_staff_group = staff_group
 
-    app.logger.info(f"sickness_staff_group values is: {sickness_staff_group}")
+    if staff_group == 'All staff groups': 
+        reasons_staff_group = [staff_group]
+    else:
+        reasons_staff_group = staff_group
 
-    app.logger.info('some staff')
-    df = df_r2[df_r2['staff_group'].isin(sickness_staff_group)]
+    info_caption = f"Line chart showing staff sickness reasons for {', '.join(reasons_staff_group)} between {sd.strftime('%B %Y')} and {ed.strftime('%B %Y')}"
 
-    fig_df = df.groupby(['date', 'staff_group'])['sickness_absence'].mean().reset_index()
+    df = df_r2[(df_r2['date'] >= sd) & (df_r2['date'] <= ed)]
+    df1 = df[df['reason'] != 'all reasons'].groupby(['staff_group', 'reason']).agg({'fte_days_lost' : 'sum'}).reset_index()
+    df1['total_days_lost'] = df1.groupby(['staff_group'])['fte_days_lost'].transform('sum')
+    df1['percentage_days_lost'] = round(df1['fte_days_lost'] / df1['total_days_lost']*100, 1)
 
-    fig = px.line(fig_df, x = 'date', y = 'sickness_absence', color='staff_group', markers=True,
+    # Sort the DataFrame by organisation, staff_group, and month
+    df1.sort_values(by=['reason', 'staff_group'], inplace=True)
+
+
+    df2 = df1[df1['staff_group'].isin(sickness_staff_group)].sort_values(by=['staff_group', 'percentage_days_lost'])
+    df3 = df2[df2['percentage_days_lost'] > 0]
+
+    #app.logger.info(df1.head().to_string())
+
+    fig = px.bar(df3, x = 'reason', y = 'percentage_days_lost', text = 'percentage_days_lost', color='staff_group',
+                 barmode='group',
                   labels={
-                     "date": "Date",
-                     "sickness_absence": "Absence Rate (%)",
+                     "reason": "Reason",
+                     "percentage_days_lost": "Percentage of days lost",
                      "staff_group": "Staff groups"
                  },)
+    
+    fig.update_traces(texttemplate='%{text:.2s}', textposition='outside')
+    fig.update_layout(uniformtext_minsize=8, uniformtext_mode='hide')
 
-    return dcc.Graph(figure=fig)
+    fig.update_layout(legend=dict(
+        orientation="h",
+        entrywidth=500,
+        yanchor="bottom",
+        y=1.02,
+        xanchor="right",
+        x=1
+    ))
+
+    fig['layout'].update(height=800)
+
+    #fig.update_xaxes(showticklabels=False)
+
+    return [dcc.Graph(figure=fig), info_caption]

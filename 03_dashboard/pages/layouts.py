@@ -1,6 +1,7 @@
 from turtle import width
 from dash import html, dcc
 import dash_bootstrap_components as dbc
+from app import app
 
 # Mostly stolen from here: https://towardsdatascience.com/callbacks-layouts-bootstrap-how-to-create-dashboards-in-plotly-dash-1d233ff63e30
 
@@ -47,6 +48,36 @@ def dropdown_select(group_list, title='Staff group', select_id="staff_group_drop
         className='pt-2, w-100'
     )
     return staff_sel
+
+def date_select(df, title, select_id, date_column):
+
+    print(f"date col is: {date_column}")
+    app.logger.info(df.head().to_string())
+
+    min_date = df[date_column].min()
+    max_date = df[date_column].max()
+
+    print(f"min date: {min_date} and max {max_date}")
+
+    date_sel = html.Div(
+        [
+            html.P(title, id=f"{select_id}_label", className='lead'),
+            dcc.DatePickerRange(
+                id=select_id,
+                month_format='MMMM Y',
+                start_date=min_date,
+                min_date_allowed=min_date,
+                max_date_allowed=max_date,
+                end_date=max_date,
+                display_format="DD/MM/YYYY",
+                number_of_months_shown=2,
+                clearable=True
+            )
+        ],
+        className='pt-2, w-100', style={"height":"1000px"}
+    )
+
+    return date_sel
 
 def nav_bar():
     """
