@@ -19,7 +19,7 @@ benchmark_group_list = sorted(df_t1['org_type'].unique())
 benchmark_group_list.insert(0, 'All benchmark groups')
 
 org_name_list= sorted(df_t1['org_name'].unique())
-#org_name_list.insert(0,'All organisations')
+org_name_list.insert(0,'All organisations')
 #region_code_list = sorted(df_r2['region_code'].unique())
 nhse_region_name_list = sorted(df_t1['region_name'].unique())
 nhse_region_name_list.insert(0, 'All regions')
