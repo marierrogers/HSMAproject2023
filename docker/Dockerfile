@@ -8,10 +8,11 @@ RUN git clone https://github.com/marierrogers/HSMAproject2023
 
 RUN apt-get -y install nano wget ca-certificates
 RUN apt-get -y install gcc python3-dev build-essential
+RUN apt-get -y install tk
 
 RUN cp -a HSMAproject2023/. . && rm -r HSMAproject2023
 RUN mkdir -p -v data
 
 RUN pip install -r ./docker/requirements.txt
 
-CMD jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root
+CMD cd "03_dashboard" && python index.py
