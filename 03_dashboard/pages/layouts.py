@@ -74,7 +74,7 @@ def date_select(df, title, select_id, date_column):
                 clearable=True
             )
         ],
-        className='pt-2, w-100', style={"height":"1000px"}
+        className='pt-2, pb-4 w-100'
     )
 
     return date_sel
