@@ -11,3 +11,6 @@ tenacity
 ipywidgets
 notebook
 requests
+dash
+dash_bootstrap_components
+re
